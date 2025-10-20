@@ -1,6 +1,5 @@
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
@@ -34,10 +33,7 @@ export const Skills = () => {
                         <h2>Skills</h2>
                         <p>Explore a diverse range of skills and expertise<br></br>My capabilities are designed to help you achieve your goals with creativity and precision</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>EHPT+</h5>
-                            </div>
+                            
                             <div className="item">
                                 <img src={meter1} alt="Image" />
                                 <h5>Security</h5>
@@ -52,11 +48,7 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Malware Analysis</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Software Engineering</h5>
+                                <h5>Log Analysis</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
@@ -64,11 +56,7 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Database</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Data Science</h5>
+                                <h5>CyberSecurity</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />

@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Network Security Engineer", "Cybersecurity Enthusiast", "SOC Analyst" ];
+  const toRotate = [ "SOC Analyst", "Network Security Engineer", "Cybersecurity Enthusiast" ];
   const period = 2000;
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -55,7 +55,17 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Aymen Chebbi</span>
-                <h1>{`Hi! I'm Aymen`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Network Security Engineer", "Cybersecurity Enthusiast", "SOC Analyst" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>
+                  {`Hi! I'm Aymen`}
+                  <br /> {/* This moves the animation to the next line */}
+                  <span
+                    className="txt-rotate"
+                    dataPeriod="5000"
+                    data-rotate='[ "SOC Analyst", "Network Security Engineer", "Cybersecurity Enthusiast" ]'
+                  >
+                    <span className="wrap">{text}</span>
+                  </span>
+                </h1>
                   <p>I’m a network and cybersecurity engineer passionate about building secure, intelligent, and automated infrastructures. I specialize in network architecture, system monitoring, and incident response, with hands-on experience in developing a Next-Gen Intelligent SOC using open-source technologies. I’m constantly exploring innovative ways to enhance security operations through automation, cloud integration, and data-driven insights.</p>
                 <button onClick={() => window.location.href = 'https://www.linkedin.com/in/aymen-chebbi-836a56240/'}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
